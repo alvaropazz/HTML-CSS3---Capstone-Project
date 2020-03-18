@@ -10,229 +10,379 @@ html {
 
 /* Main Page */
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  header {
-    justify-content: center;
-    display: flex !important;
-    flex-direction: column;
-    padding: 5%;
-    height: 20vh;
-    width: 100vw;
-  }
-  
-  .main-page {
-    position: relative;
+/* Header */
+
+.top-icons-container {
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-icon-container {
+  font-size: 45px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.app-icon-container p {
+  margin: 0;
+}
+
+.menu-icon {
+  color: #414464;
+  font-size: 35px;
+  padding: 30px;
+  border: none;
+  background: none;
+}
+
+.swip {
+  color: #4e50b8;
+}
+
+.ex {
+  color: #f0916e;
+}
+
+/* Main  */
+
+.main-profile-box {
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.top-profile-container {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.top-avatar-container {
+  border: 1px solid #dedede;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 0px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+  border-radius: 25%;
+  background-color: #fff;
+}
+
+.top-avatar-container-ellipsis {
+  padding: 10px;
+  border: none;
+}
+
+.fa-ellipsis-v {
+  color: #414464;
+}
+
+.images-container {
+  background-image: url(images/russian.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  height: 50vh;
+  width: 80vw;
+  border-radius: 15px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.images-container-distance {
+  color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+
+.images-container-distance-kilometers {
+  margin-left: 10px;
+}
+
+.images-container-menu {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+.images-container-boxes {
+  list-style: none;
+}
+
+.images-container-boxes a {
+  line-height: 25px;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.profile-information-box {
+  position: absolute;
+  bottom: -80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 10px 10px #f5f5f5
+}
+
+.profile-information-box-top {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  height: 60px;
+}
+
+.profile-information-box-top p {
+  margin: 0;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.profile-information-add-user {
+  grid-area: 1/2/3/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.profile-information-name {
+  font-size: 20px;
+  color: #414464;
+  font-weight: 700;
+}
+
+.profile-information-location {
+  color: #666;
+}
+
+.fa-user-plus {
+  font-size: 30px;
+  color: #f0916e;
+}
+
+.profile-information-box-bottom {
+  height: 40px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+  width: 99%;
+}
+
+ .profile-information-box-bottom p {
+  margin: 0;
+  font-size: 15px;
+  align-self: center;
+ }
+
+.profile-information-box-bottom a {
+  color: #999;
+  text-decoration: none;
+}
+
+.bottom-icons-container {
+  display: flex;
+  align-items: center;
+  margin-top: 35%;
+  padding-top: 10px;
+  border-top: 1px solid #ececec;
+  justify-content: space-around;
+  width: 99%;
+}
+
+.bottom-element-container {
+  font-size: 30px;
+  color: #999;
+}
+
+.bottom-element-main-container {
+  position: relative;
+  top: -25px;
+  font-size: 35px;
+  background-color: #4e50b8;
+  border-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 10px 10px 10px #dedede
+}
+
+.information-sidebar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+
+  .main-section {
+    display: flex;
+    align-items: center;
+    padding-top: 20%;
   }
 
-  .top-icons-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-  
-  .top-profile-container {
-    display: flex;
-  }
-  
-  .app-icon-container {
-    font-size: 45px;
-    font-weight: 900;
-    text-decoration: none;
-  }
-
-  .app-icon-container p {
-    margin: 0;
-  }
-  
-  .menu-icon {
-    color: #414464;
-    font-size: 35px;
-    padding: 30px;
-    border: none;
-    background: none;
-  }
-  
-  .swip {
-    color: #4e50b8;
-  }
-  
-  .ex {
-    color: #f0916e;
-  }
-  
-  .top-profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  
   .top-avatar-container {
-    border: 1px solid #dedede;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    margin: 0px;
-    border-radius: 25%;
+    width: 50px;
+    height: 50px;
   }
-  
-  .top-avatar-container-ellipsis {
-    padding: 10px;
+
+  #top-avatar-container-ellipsis {
     border: none;
+    display: flex;
+    background-color: #fafafa;
+    padding-left: 22px;
+    padding-top: 18px;
   }
   
   .fa-ellipsis-v {
     color: #414464;
   }
-  
-  main {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-    height: 60vh;
-    width: 100vw;
-  }
 
+  .main-profile-box {
+    margin-top: 0;
+  }
   .images-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(images/russian.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -15px 30px;
-    height: 55vh;
-    width: 80vw;
-    border-radius: 5%;
-    background-color: lightblue;
-    position: relative;
-  }
-
-  .images-container-distance {
-    color: #fff;
-    position: absolute;
-    left: 10%;
-    top: 5%;
-  }
-
-  .images-container-distance-kilometers {
-    margin-left: 10px;
-  }
-
-  .images-container-menu {
-    position: absolute;
-    right: 10%;
-    top: 5%;
-  }
-
-  .images-container-boxes {
-    list-style: none;
-  }
-
-  .images-container-boxes a {
-    line-height: 25px;
-    color: rgb(255, 255, 255, 0.8);
+    background-position: 50% 70%;
+    height: 40vh;
+    width: 50vw;
   }
 
   .profile-information-box {
+    display: none;
+  }
+
+  .information-sidebar {
+    margin-left: 30px;
+    width: 30vw;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: -15%;
-    background-color: #fff;
-    width: 60vw;
-    height: 15vh;
-    border-radius: 5%;
-    box-shadow: 10px 10px #f5f5f5
   }
 
-  .profile-information-box-top {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: auto;
-    height: 10vh;
-  }
-
-  .profile-information-box-top p {
-    margin: 0;
-    margin-left: 10px;
-    align-self: center;
-  }
-
-  .profile-information-add-user {
-    grid-area: 1/2/3/3;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .profile-information-name {
-    font-size: 40px;
-    color: #414464;
-    font-weight: 700;
-  }
-
-  .profile-information-location {
-    color: #666;
-  }
-
-  .fa-user-plus {
-    font-size: 30px;
-    color: #f0916e;
-  }
-
-  .profile-information-box-bottom {
-    height: 5vh;
-  }
-
-  .profile-information-box-bottom {
-    border-top: 1px solid #ececec;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .profile-information-box-bottom a {
-    color: #999;
-    text-decoration: none;
-  }
-
-  footer {
-    margin-top: 10vh;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .bottom-icons-container {
+  .filter-box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 5px 5px 5px #dedede;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #414464;
+    border-radius: 20px;
+    background-color: #fff;
   }
 
-  .bottom-element-container {
-    font-size: 30px;
+  .filter-box p {
+    margin: 10px;
+  }
+
+  .filter-box a {
+    color: #4e50b8;
+  }
+
+  .information-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #dedede;
+    background-color: #fff;
+  }
+
+  .information-bar-title {
+    color: #666;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .information-bar-content {
+    color: #4e50b8;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .information-bar-button {
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+    border-radius: 10px;
+    margin-top: 35px;
+  }
+
+  .information-bar-button a {
+    text-decoration: none;
+    margin-top: 18px;
+    margin-bottom: 18px;
     color: #999;
+    font-weight: 600;
   }
 
-  .bottom-element-main-container {
+  .information-box-secondary-location {
+    display: flex;
     position: relative;
-    top: -15px;
+  }
+
+  .location-container {
+    position: absolute;
+    top: 25px;
+    right:0;
+    font-size: 25px;
     background-color: #4e50b8;
     border-radius: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     text-decoration: none;
     color: #fff;
-    box-shadow: 10px 10px 10px #dedede
+    box-shadow: 5px 5px 5px #dedede;
   }
+
+  .information-box-tertiary {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  .information-box-tertiary p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .information-box-gift {
+    margin-left: 20px;
+  }
+
+  .information-box-gift h2 {
+    font-size: 14px;
+    margin: 0;
+    color: #4e50b8;
+    margin-bottom: 5px;
+  }
+
+  .information-box-gift p {
+    color: #999;
+  }
+
 }
