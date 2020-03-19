@@ -222,6 +222,10 @@ html {
   box-shadow: 10px 10px 10px #dedede
 }
 
+.top-icons-container-long-screen {
+  display: none;
+}
+
 .information-sidebar {
   display: none;
 }
@@ -350,7 +354,7 @@ html {
   .location-container {
     position: absolute;
     top: 25px;
-    right:0;
+    right: -10px;
     font-size: 25px;
     background-color: #4e50b8;
     border-radius: 15%;
@@ -393,9 +397,78 @@ html {
 }
 
 @media (min-width: 1200px) {
+  .top-icons-container {
+    display: none;
+  }
+
+  .top-icons-container-long-screen {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 5px 5px #dedede;
+  }
+
+  .app-icon-container {
+    font-size: 40px;
+  }
+
+  .long-screen-location-container {
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 20px;
+  }
+
+  .long-screen-location-icon {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: #dedede;
+    padding: 5%;
+    width: 50px;
+    border-radius: 5px;
+  }
+
+  .long-screen-location-text span {
+    color: #414464;
+    font-size: 700;
+    text-decoration: underline;
+  }
+
+  .long-screen-location-text i {
+    color: #999;
+    font-size: 20px;
+  }
+
+  .long-screen-right-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .long-screen-right-icons a {
+    color: #999;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .long-screen-right-icons-notifications {
+    margin-right: 20px;
+    padding-right: 30px;
+    border-right: 1px solid #dedede;
+  }
+
+  .long-screen-right-icons-notifications a {
+    color: #999;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
   .main-section {
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 8%;
+    margin-bottom: 100px;
   }
   
   .feature-sidebar {
@@ -404,11 +477,13 @@ html {
   }
 
   .images-container {
-    width: 30vw;
+    width: 40vw;
+    height: 60vh;
   }
 
   .information-sidebar {
     width: 20vw;
+    margin-left: 0;
   }
 
   .main-feature-container {
