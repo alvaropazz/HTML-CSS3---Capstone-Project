@@ -635,6 +635,7 @@ html {
   z-index: 0;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 30px;
 }
 
 .conversation-items-container {
@@ -700,7 +701,7 @@ html {
   padding-right: 5%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .chat-element-left {
@@ -767,4 +768,10 @@ html {
   border: 1px solid #ececec;
   border-radius: 10px;
   font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .conversations-container {
+    margin-bottom: 220px;
+  }
 }
