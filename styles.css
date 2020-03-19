@@ -681,3 +681,71 @@ html {
   z-index: 1;
   background-color: #fafafa;
 }
+
+/* Chat Page */
+
+.message-icon-container span {
+  color: #0f0;
+}
+
+.chat-container {
+  margin-top: 120px;
+  z-index: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.chat-element-left {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: flex-start;
+  margin-bottom: 15px;
+}
+
+.chat-element-left h2 {
+  border-radius: 20px;
+  padding: 5%;
+  color: #414464;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  background-color: lavender;
+}
+
+.chat-element-left p {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.chat-element-right {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.chat-element-right h2 {
+  border-radius: 20px;
+  padding: 5%;
+  color: #414464;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  background-color: #ececec;
+}
+
+.chat-element-right p {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
