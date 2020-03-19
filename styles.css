@@ -10,8 +10,6 @@ html {
 
 /* Main Page */
 
-/* Header */
-
 .top-icons-container {
   height: 15%;
   display: flex;
@@ -609,4 +607,77 @@ html {
   .bottom-icons-container {
     display: none;
   }
+}
+
+/* Conversations Page */
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fafafa;
+}
+
+.message-icon-container {
+  font-size: 30px;
+  text-decoration: none;
+  color: #414464;
+}
+
+.conversations-container {
+  position: relative;
+  top: 130px;
+  height: 100vh;
+  z-index: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.conversation-items-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px #dedede;
+}
+
+.conversation-avatar-container {
+  border: 1px solid #dedede;
+  margin: 0px;
+  border-radius: 25%;
+  background-color: #fff;
+}
+
+.conversation-bites-container {
+  margin-left: 20px;
+}
+
+.conversation-bites-container h2 {
+  margin: 0px;
+  color: #414464;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.conversation-bites-container p {
+  margin: 0px;
+  color: #999;
+  font-size: 12px;
+}
+
+.conversation-bites-container p i {
+  margin-right: 5px;
+}
+
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fafafa;
 }
