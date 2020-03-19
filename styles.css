@@ -393,6 +393,10 @@ html {
     color: #999;
   }
 
+  .bottom-icons-container {
+    margin-top: 35%;
+  }
+
 }
 
 @media (min-width: 1200px) {
