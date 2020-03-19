@@ -79,9 +79,10 @@ html {
   background-color: #fff;
 }
 
-.top-avatar-container-ellipsis {
+#top-avatar-container-ellipsis {
   padding: 10px;
   border: none;
+  background-color: #fafafa;
 }
 
 .fa-ellipsis-v {
@@ -437,6 +438,11 @@ html {
     color: #414464;
     font-size: 700;
     text-decoration: underline;
+  }
+
+  .long-screen-location-text button {
+    border: none;
+    background-color: #fff;
   }
 
   .long-screen-location-text i {
