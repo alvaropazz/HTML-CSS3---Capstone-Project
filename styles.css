@@ -635,7 +635,7 @@ html {
   z-index: 0;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 30px;
+  margin-bottom: 800px;
 }
 
 .conversation-items-container {
@@ -770,8 +770,38 @@ html {
   font-size: 14px;
 }
 
+.chat-container-medium {
+  display: none;
+}
+
 @media (min-width: 992px) {
+  .main-section-conversation {
+    display: flex;
+    align-items: center;
+    margin-top: 220px;
+  }
+
   .conversations-container {
-    margin-bottom: 220px;
+    overflow: scroll;
+    width: 50%;
+    height: 1000px;
+    top: 0;
+    margin-bottom: 0;
+  }
+  .chat-container-medium {
+    display: block;
+    overflow: scroll;
+    width: 50%;
+    height: 1000px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .chat-element-right {
+    float: right;
+  }
+
+  .chat-element-left{
+    clear: both;
   }
 }
