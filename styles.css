@@ -224,6 +224,10 @@ html {
   display: none;
 }
 
+.profile-control-box {
+  display: none;
+}
+
 .information-sidebar {
   display: none;
 }
@@ -268,6 +272,58 @@ html {
 
   .profile-information-box {
     display: none;
+  }
+
+  .profile-control-box {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+  }
+
+  .profile-control-element-1 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: #666;
+    background-color: #ececec;
+    text-decoration: none;
+  }
+
+  .profile-control-like-dislike {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .profile-control-element-2{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #4e50b8;
+    text-decoration: none;
+  }
+
+  .profile-control-element-3{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #f0916e;
+    text-decoration: none;
   }
 
   .information-sidebar {
@@ -480,6 +536,10 @@ html {
     margin-bottom: 100px;
   }
   
+  .profile-control-box {
+    width: 30vw;
+  }
+
   .feature-sidebar {
     display: block;
     width: 20vw;
@@ -774,6 +834,10 @@ html {
   display: none;
 }
 
+.feature-sidebar-medium {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .main-section-conversation {
     display: flex;
@@ -803,5 +867,28 @@ html {
 
   .chat-element-left{
     clear: both;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-section-conversation {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .feature-sidebar-medium {
+    display: block;
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .chat-container-medium {
+    width: 35%;
+  }
+
+  .conversations-container {
+    width: 40%;
   }
 }
