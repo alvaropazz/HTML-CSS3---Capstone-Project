@@ -4,9 +4,9 @@ html {
   background-color: #fafafa;
 }
 
-*, 
-*:before, 
-*:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -257,7 +257,7 @@ html {
     padding-left: 22px;
     padding-top: 18px;
   }
- 
+
   .fa-ellipsis-v {
     color: #414464;
   }
