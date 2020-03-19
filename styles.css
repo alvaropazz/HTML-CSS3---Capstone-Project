@@ -403,8 +403,10 @@ html {
 
   .top-icons-container-long-screen {
     display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
     height: 100px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 5px 5px #dedede;
