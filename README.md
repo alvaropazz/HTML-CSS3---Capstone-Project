@@ -28,7 +28,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/alvaropazz/HTML-CSS3---Capstone-Project/b365594ab5583e40688f6c4eb75b920d04ce613a/index.html)
+[Live Demo Link](https://rawcdn.githack.com/alvaropazz/HTML-CSS3---Capstone-Project/6cea5c154d3815c80889966a2e2aca0bb82e8dd5/index.html)
 
 ## Authors
 
