@@ -683,6 +683,10 @@ html {
   background-color: #fafafa;
 }
 
+.top-navbar a {
+  color: #414464;
+}
+
 .message-icon-container {
   font-size: 30px;
   text-decoration: none;
